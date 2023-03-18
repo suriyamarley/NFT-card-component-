@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');                                
+
+*,*::after,
+::before{
+  margin: 0%;
+  padding:0%;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+html{
+  font-size: 16px;
+
+}
+:root{
+--clr-Soft-blue: hsl(215, 51%, 70%);
+--clr-Cyan: hsl(178, 100%, 50%);
+--clr-Very-dark-blue-main: hsl(217, 54%, 11%);
+--clr-Very-dark-blue-card: hsl(216, 50%, 16%);
+--clr-Very-dark-blueline: hsl(215, 32%, 27%);
+--clr-White: hsl(0, 0%, 100%);
+--box-shadow: 0px 22px 12px rgba(0,0,0,0.15);
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-Very-dark-blue-card);
+}
+/* global css */
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+a{
+text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.image-section{
+  width: 97%;
+  margin: auto;
+}
+
+.logo{
+  border-radius: 8px;
+}
+
+.clock{
+  width: 60px;
+}
+
+.avatar{
+  width: 30px;
+}
+
+.main-container{
+  border-radius: 8px;
+  background-color:var(--clr-Very-dark-blueline);
+  width: 300px;
+  height: 75vh;
+  padding: 1rem;
+  box-shadow: 1px 2px 30px var(--clr-Very-dark-blue-main);
+}
+
+.title{
+  margin-top:1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.para{
+  margin-top: 10px;
+  color: var(--clr-Soft-blue);
+}
+
+.fa-solid{
+  color: var(--clr-Soft-blue);
+}
+
+.fa-brands{
+  color: var(--clr-Cyan);
+}
+.para-two{
+  margin-top: 20px;
+  color: var(--clr-Cyan);
+
+}
+
+span{
+  margin-left: 5rem;
+  color: var(--clr-Soft-blue);
+  
+}
+
+.middle-section{
+  margin-bottom: 10px;
+}
+
+
+.icon{
+  width: 10px;
+}
+
+hr{
+margin-top: 1.6rem;
+color: var(--clr-Very-dark-blueline);
+}
+
+
+.profile-secction{
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  gap: 10px;
+  color: var(--clr-Soft-blue);
+}
+
+.white{
+  color: white;
+  margin: 10px;
+}
+
+
+@media screen and (max-width:700px) {
+
+  .main-container{
+    min-height: 46vh;
+    width: 320px;
+    border-radius: 10px;
+  }
+
+  .profile-secction{
+    font-size: 14px;
+  }
+
+  .para{
+  font-size: 14px;
+  }
+
+  .image-section{
+    margin-top: 12px;
+    width: 94%;
+  }
+
+  .middle-section{
+    font-size: 15px;
+  }
+
+  span{
+  margin-left: 4rem;
+
+  }
+  
+}
